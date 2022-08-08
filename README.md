@@ -2,7 +2,7 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <h1 align="center">Employees PJAX</h1>
     <br>
 </p>
 
@@ -36,12 +36,16 @@ DIRECTORY STRUCTURE
 
 REQUIREMENTS
 ------------
-
 The minimum requirement by this project template that your Web server supports PHP 5.6.0.
-
 
 INSTALLATION
 ------------
+
+### Clone repository
+You can then clone this project repository using the following command in domain root:
+~~~
+git clone git@github.com:sihoulette/employees.task.git . 
+~~~
 
 ### Install via Composer
 
@@ -51,7 +55,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+composer install
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
@@ -63,7 +67,7 @@ http://localhost/basic/web/
 
 ### Install from an Archive File
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
+Extract the archive file downloaded from [github.com/sihoulette/employees.task](https://github.com/sihoulette/employees.task/archive/refs/heads/master.zip) to
 a directory named `basic` that is directly under the Web root.
 
 Set cookie validation key in `config/web.php` file to some random secret string:
@@ -110,16 +114,16 @@ CONFIGURATION
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+Edit the file `.env` with real data, for example:
 
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_CHARSET=utf8
+DB_DATABASE=yii2basic
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
 **NOTES:**
