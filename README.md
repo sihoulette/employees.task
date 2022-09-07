@@ -44,7 +44,7 @@ INSTALLATION
 ### Clone repository
 You can then clone this project repository using the following command in domain root:
 ~~~
-git clone git@github.com:sihoulette/employees.task.git . 
+git clone git@github.com:sihoulette/yii2-employees-crud.git . 
 ~~~
 
 ### Install via Composer
